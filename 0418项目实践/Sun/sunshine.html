@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sun</title>
+		<link rel="shortcut  icon" type="image/x-icon" href="./img/logo.ico" />
+		<style>
+		#main{
+			width:1336px;height:700px ;
+			background:url(js/8.gif);
+		    color: darksalmon ;
+			 
+		}
+		#main1{
+			padding-top:170px;
+			width: 500px;
+			float: left;
+		}
+		#main2{
+			width: 400px;
+			height: 600px;
+			float: right;
+			padding-top:90px ;
+			display: none;
+			position: relative;
+		}
+	    #main2 div{
+		background: red;
+		width: 320px;height:200px;border: 2px solid black;
+		display: none;
+		float: right;
+	
+	}
+	  .btn{
+			background-color: darkgray;
+		
+		}
+		/*.chl{background: burlywood;}*/
+		input{background:darksalmon ;}
+	   #picture{
+	   	float: right;
+		/*padding-left: 1100px;*/
+		color: darksalmon;
+		/*width: 100px;height: 100px;*/
+	}
+		#head{
+			width:1336px;height:40px ;
+			background: url(js/9.jpg);
+			font color: red   ;
+		}
+		#shead{padding: 8px;
+		       margin-left: 185px; 
+		       font-size: 18px;
+		}
+		#dis1{
+			width: 140px;height:250px;border: 2px solid black;
+			display: none;
+			background: brown;
+			position: absolute;
+			margin-left: 95px;
+			margin-top: 6px;
+			color: darksalmon;
+		}
+		#dis2{
+			width: 130px;height:250px;border: 2px solid black;
+			display: none;
+			background: brown;
+			position: absolute;
+			margin-left: 200px;
+			margin-top: 6px;
+			color: darksalmon;
+		}
+		#dis3{
+			width: 130px;height:250px;border: 2px solid black;
+			display: none;
+			background: brown;
+			position: absolute;
+			margin-left: 160px;
+			/*margin-top: 1px;*/
+			color: darksalmon;
+			font-size: 20px;
+		}
+		span{
+			color: burlywood;
+		}
+		img{opacity: 0.15;}
+		#shead span:hover{color: aquamarine;}
+		</style>
+		<script>
+		    var timer=null;
+			window.onload=function(){
+			
+			var Div1=document.getElementById('dis1');
+			var Div2=document.getElementById('dis2');
+			var Div3=document.getElementById('dis3');
+			var Span1=document.getElementById('h1');
+			var Span2=document.getElementById('h2');
+			var Span3=document.getElementById('h3');
+			Span1.onmousemove=function(){
+				clearTimeout(timer);
+				Div1.style.display="block";
+				Div2.style.display='none';
+				Div3.style.display='none';
+				
+			}
+			Span1.onmouseout=function(){
+				timer=setTimeout(function(){Div1.style.display="none";},1000);
+			}
+			Span2.onmousemove=function(){
+				clearTimeout(timer);
+				Div1.style.display='none';
+				Div3.style.display='none';
+				Div2.style.display="block";
+			}
+			Span2.onmouseout=function(){
+			    timer=setTimeout(function(){Div2.style.display="none";},1000);
+			}
+			Span3.onmousemove=function(){
+				clearTimeout(timer);
+				Div2.style.display='none';
+				Div1.style.display='none';
+				Div3.style.display="block";
+			}
+			Span3.onmouseout=function(){
+				timer=setTimeout(function(){Div3.style.display="none";},1000);
+			}
+			   
+				var Divpic=document.getElementById('picture');				
+				Divpic.onmouseover=function(){
+					var Mian2=document.getElementById('main2').style.display="block";
+					
+				}
+				Divpic.onmouseout=function(){
+					var Mian2=document.getElementById('main2');
+					var di2=document.getElementById('div_2');				
+				    var di3=document.getElementById('div_3');	
+					timer=setTimeout(function(){Mian2.style.display="none";},6000);
+					timer=setTimeout(function(){di2.style.display="none";},6000);
+					timer=setTimeout(function(){di3.style.display="none";},6000);
+							
+				}
+			}
+			function changecolor(num){
+			for (var i=1;i<4;i++) {
+				var str=document.getElementById('a_'+i);
+					
+				/*str[i].index=i;*/
+				if(i==num){
+					/*str[i].index=i;*/
+					str.className="btn";
+					var dtr=document.getElementById('div_'+i).style.display="block";
+					
+				}
+				else{str.className="";
+				var dtr=document.getElementById('div_'+i).style.display="none";
+				}
+			}	
+			}
+			/*window.onload=function(){
+				var Divpic=document.getElementById('picture');
+				var Picture=Divpic.document.getElementsByName('img');				
+				Picture.onmouseover=function(){
+					var Mian2=document.getElementById('main2').style.display="block";
+				}
+				Picture.onmouseout=function(){
+					var Mian2=document.getElementById('main2').style.display="none";
+				}
+			}*/
+		</script>
+	</head>
+	<body>
+		<div id="head">
+			
+			<div id="shead">
+					<span id="h3">home page</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <span id="h1">about</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <span id="h2">hello?</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <span id="">more</span>
+		        <div id="dis1">
+		        	<ul>
+
+		        	<strong>
+		        	
+		        	<li><a href="#">普及天文知识</a></li><br/>
+		        	<li><a href="#">拓宽业余生活</a></li><br/>
+		        	<li><a href="#">体验探索的乐趣</a></li><br/>
+		        	<li><a href="#">在线天文交流平台</a></li><br/>
+			         </strong>
+			        </ul>
+				</div>
+		         
+		        <div id="dis2">
+		        	<ul>
+		        	<strong>
+			              <li> 更多详情请质询电话：<br />123-34567</li><br/>
+			              <li> 邮箱：1234qq<br/>.com</li>
+		        	</strong></ul>
+				</div>	
+			</div>	
+			     <div id="dis3"><strong>
+			    <ul>			    	
+			    		<li><a href="#"> 首页</a></li>	
+			    		<li><a href="#"> 水星</a></li>	
+			    		<li><a href="#"> 火星</a></li>	
+			    		<li><a href="#"> 木星</a></li>				    	
+			    		<li><a href="#"> 金星</a></li>				    	
+			    		<li><a href="#"> 地球</a></li>	
+			    		<li><a href="#"> 土星</a></li>				    
+			    </ul>
+			     </strong>
+			     </div>
+		</div>
+		<div id="main">
+			<div id="main1">
+				<h2 align="center">太阳简介</h2>
+		      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;太阳是太阳系的中心天体，占有太阳系总体<br/>质量的99.86%。太阳系中的八大行星、小行星、<br/>流星、彗星、外海王星天体
+		      以及星际尘埃等，都<br/>围绕着太阳公转，而太阳则围绕着银河系的中心<br/>公转。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;太阳是位于太阳系中心的恒星，它几乎是热
+		   <br/>等离子体与磁场交织着的一个理想球体。太阳直<br/>径大约是1392000（1.392×10⁶）公里，相当于地<br/>球直径的109倍；体积
+		      大约是地球的130万倍；
+                      <br/>×10³⁰千克（地球的330000倍）。从化学组成来看，<br/>现在太阳质量的大约四分之三是氢，剩下的几乎都<br/>是氦，包括氧、碳、氖、铁和其他的重元素质量少<br/>于2%，采用核聚变的方
+                      式向太空释放光和热。
+            </div>
+	       <div id="picture"><img src="js/03.png" />    
+	       </div>
+           <div id="main2">
+           
+            <input type="button" id="a_1" value="1" onclick="changecolor('1')"/>
+			<input type="button" id="a_2" value="2" onclick="changecolor('2')"/>
+			<input type="button" id="a_3" value="3" onclick="changecolor('3')"/>
+           	<div id="div_1" style="display: block; background:url(js/u1.jpg);"></div>
+			<div id="div_2" style="background: url(js/u2.jpg);"></div>
+			<div id="div_3" style="background: url(js/w1.jpg);"></div>
+           </div> 
+  		</div>
+	</body
+</html>

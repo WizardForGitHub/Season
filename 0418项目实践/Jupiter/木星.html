@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>木星</title>
+		<link rel="shortcut  icon" type="image/x-icon" href="img/logo.ico" />
+		<style type="text/css">
+		body{
+			background: black;
+		}
+			#all{
+				margin-left: 155px;
+			}
+  			#header{
+  				background-color: #CC4646;
+  				height: 80px;
+  			    font-family: "微软雅黑";
+  			    position: absolute;
+  			    width: 1000px;			    
+  			}
+  			#header-left{
+  				position:absolute;
+  				width: 100px;
+  				font: "微软雅黑";
+  				font-size: 40px;
+  				margin-left: 130px;
+				margin-top: 17px;
+				color: white;
+  				
+  			}
+  			#header-right{
+  				width: auto;
+  				position:absolute;
+  				font-size: 20px;
+  				margin-left: 500px;  				  				
+				margin-top: 17px;
+				
+  			}
+  			#header-right ul li{
+  				list-style: none;
+  				display: inline;/*横向排列*/
+  				margin: 20px;
+  			}
+  			#header-right ul li a{
+ 				color: darkgray;
+ 				text-decoration: none;
+  			}
+  			#header-right ul li a:hover{
+ 				color: #FFFFFF;
+ 				font-size: 25px;
+
+  			}
+  			#top{
+  				position: absolute;
+  				margin-top: 80px;
+  				width: 1000px;
+  			}
+  			#top img{
+  				width: 1000px;
+  			}
+  			#keputop{
+  				position: absolute;
+  				background-color: #CC4646;
+  				margin-top: 645px;
+  				height: 30px;
+  				width: 1000px;  
+  			}
+  			#keputop-on,#weijietop-on,#tupiantop-on{
+  				position:absolute;
+  				margin-left: 50px;
+  				margin-top: 8px;
+  				font-family: "微软雅黑";
+  				color: white;
+  			}
+  			#kepu{
+  				position:absolute;
+  				margin-top: 675px;
+  			}
+  			#kepu-left img{
+  				width: 500px;
+  			}
+  			#kepu-right{
+  				width: 500px;
+  				height: 396px;
+  				margin-left: 500px;
+  				margin-top: -400px;
+  				color: white;
+ 				font-family: "微软雅黑";
+ 				font-size: 25px;
+  				text-indent: 40px;
+  				letter-spacing: 10px;
+  			}
+  			#weijie{
+  				position:absolute;
+  				margin-top: 1170px;
+  			}
+  			#weijietop{
+  				position: absolute;
+  				background-color: #CC4646;
+  				margin-top: 1140px;
+  				height: 30px;
+  				width: 1000px;  	
+  			}
+   			#weijie-left{
+  				width: 500px;
+  				height: 530px;
+  				color: white;
+ 				font-family: "微软雅黑";
+ 				font-size: 25px;
+  				text-indent: 40px;
+  				letter-spacing: 10px;
+  				padding-top: 100px;
+   			}
+   			#weijie-right{
+   				position:absolute;
+  				margin-left: 500px;
+  				margin-top: -630px;
+   			}
+   			#weijie-right img{
+  				width: 500px;
+  			}
+  			#tupiantop{
+  				position: absolute;
+  				background-color: #CC4646;
+  				margin-top: 1805px;
+  				height: 30px;
+  				width: 1000px;  	
+  			}
+			#tupian{
+				width:1000px;
+				height:230px;
+				margin-top: 1820px;
+				overflow: hidden;
+				position: absolute;
+			}
+			#tupian ul{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#tupian ul li{
+				height: 402px;
+				width: 310px;
+				float: left;
+				list-style: none;
+			}
+			#tupian ul li:hover{
+				transform: scale(1.5);
+			}
+			#foot a img{
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+			}
+
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var speed = 2;
+				var oDiv = document.getElementById('tupian');
+				var oUl = oDiv.getElementsByTagName('ul')[0];
+				var oLi = oDiv.getElementsByTagName('li');
+				var timer = null;
+				oDiv.onmouseover=function(){
+					clearInterval(timer);
+				}
+				oUl.innerHTML = oUl.innerHTML+oUl.innerHTML;
+				oUl.style.width = oLi[0].offsetWidth*oLi.length+'px';
+				
+				function a()
+				{
+					timer = setInterval(function(){
+						
+						if(oUl.offsetLeft<-oUl.offsetWidth/2){
+							oUl.style.left=0;
+						}
+						if(oUl.offsetLeft>0){
+							oUl.style.left=-oUl.offsetWidth/2+'px';
+						}
+						oUl.style.left = oUl.offsetLeft+speed+'px';
+					},30);				    
+				}
+				oDiv.onmouseout=a;
+				a();
+			}
+		</script>
+	</head>
+	<body>
+		
+		<div id="all">
+			
+			<div id="header">
+				<div id="header-left">
+	                    <b >木星</b>
+	            </div>	
+	            <div id="header-right" >
+	                <ul>
+	                    <li><a href="#kepuhref" >科普一下</a></li>
+	                    <li><a href="#weijiehref">未解之谜</a></li>
+	                    <li><a href="#tupianhref">图片鉴赏</a></li>
+	                </ul>
+	            </div>
+			</div>
+			<div id="top">
+	            <img src="img/1.jpg"/>
+	        </div>
+	        <div id="keputop">
+	        	<div id="keputop-on">
+	        		<a name="kepuhref"><b>科普一下</b></a>
+	        	</div>
+			</div>
+	        <div id="kepu">
+	        	<div id="kepu-left">
+	        		<img src="img/kepu1.jpg" />
+	        	</div>
+	        	<div id="kepu-right">
+	        		木星是太阳系八大行星中体积最大、自转最快的行星，从内向外的第五颗行星。它的质量为太阳的千分之一，但为太阳系中其它七大行星质量总和的2.5倍。木星与土星、天王星、海王星皆属气体行星，因此四者又合称类木行星（木星和土星合称巨行星）。2012年2月23日科学家称发现了木星2颗新卫星，累计卫星达68颗。
+	        		<a href="http://baike.baidu.com/link?url=eNyhRqxut4-Vm95EH5SO91CKc_p2W-YeM47ZyAWk9UKQyytBMLT1NjLcB_Jq-EJqCAdVpmdeEoShWwgUgpVwD5z9iCQ_TvMx1j4obkVWTvO">
+	        			点我了解更多
+	        		</a>
+	        	</div>	        	
+	        </div>
+	        <div id="weijietop">
+	        	<div id="weijietop-on">
+	        		<a name="weijiehref"><b>未解之谜</b></a>	        		
+	        	</div>
+			</div>
+	        <div id="weijie">
+	        	<div id="weijie-left">
+						英国天体生物学中间负责人查尔斯·科克雷尔（Charles Cockrell）教授表示，搜寻其它生命形式意味着搜寻其它微生物，而在这方面貌前为止仍然一片空白。他说道：“天体生物学领域的主要目标是斟酌地球是否是生命存在的特例，照样在其他天体也能发明生命存在。”	<br />        		
+						<a href="http://baike.baidu.com/link?url=eNyhRqxut4-Vm95EH5SO91CKc_p2W-YeM47ZyAWk9UKQyytBMLT1NjLcB_Jq-EJqCAdVpmdeEoShWwgUgpVwD5z9iCQ_TvMx1j4obkVWTvO">
+	        			点我了解更多
+	        		</a>	        		
+	        	</div>
+	        	<div id="weijie-right">
+	        		<img src="img/weijie.jpg" />
+	        	</div>	
+	        </div>
+	        <div id="tupiantop">
+	        	<div id="tupiantop-on">
+	        		<a name="tupianhref"><b>图片鉴赏</b></a>
+	        		
+	        	</div>
+			</div>
+	        <div id="tupian">
+	        	<ul>
+					<li> <img src="img/tupian1.jpg" /> </li>
+					<li> <img src="img/tupian2.jpg" /> </li>
+					<li> <img src="img/tupian3.jpg" /> </li>				
+					<li> <img src="img/tupian4.jpg" /> </li>				
+					<li> <img src="img/tupian5.jpg" /> </li>				
+				</ul>
+	        </div>
+	        <div id="foot">
+	        	<a href="#">
+	        		<img src="img/foot.jpg" />
+	        	</a>
+	        </div>
+		</div>
+	</body>
+</html>

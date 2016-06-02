@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Staurn</title>
+		<link rel="shortcut  icon" type="image/x-icon" href="../img/logo.ico" />
+		<style type="text/css">	
+		body{
+			background-color: #B9D3EE;
+		}
+		a{
+			text-decoration: none;
+		}
+		#d0{
+			text-align: center;
+			
+			height: 60px;
+			width: 1200px;
+			margin: auto;
+			font-weight: bold;
+			font-size: 200%;
+			
+			
+		}
+		#d1{
+			width: 1200px;
+			height: 600px;
+			background: url(img/1.jpg);
+			margin: auto;	
+				
+		}
+		#d1 img{
+				
+			width: 100px;
+			height: 100px;
+		}
+		#div1{
+			margin: auto;
+			width: 1200px;			
+		}
+		#d2{
+			width: 480px;
+			height: 500px;
+			display: inline-block;
+			background-color: #B9D3EE;
+			margin-left: 40px;
+			
+		
+			
+		}
+		#d3{
+			width:680px;
+			display: inline-block;
+			height: 500px;		
+			background-color: #B9D3EE;
+			float: left;
+			
+		}
+		#div2{
+			margin: auto;
+			width: 1200px;			
+		}
+		#d4{
+			width: 480px;
+			height: 500px;
+			display: inline-block;
+			background-color: #B9D3EE;
+			margin-left: 40px;
+			
+		}
+		#d5{
+			width:680px;
+			display: inline-block;
+			height: 500px;		
+			background-color: #B9D3EE;
+			float: left;
+			
+		}
+		#div3{
+			margin: auto;
+			width: 1200px;			
+		}
+		#d6{
+			width: 480px;
+			height: 500px;
+			display: inline-block;
+			background-color: #B9D3EE;
+			margin-left: 40px;
+			
+		}
+		#d7{
+			width:680px;
+			display: inline-block;
+			height: 500px;		
+			background-color: #B9D3EE;
+			float: left;
+			
+		}
+		
+		#divm{
+			width: 450px;
+			height: 420px;
+			background-color: #F5F5F5;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 20px;
+		}
+		#divs{
+			width: 650px;
+			height: 420px;
+			background-color: #F5F5F5;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 20px;
+		}
+		</style>
+	<script type="text/javascript">
+	var imgS = ['url(img/1.jpg)','url(img/2.jpg)','url(img/3.jpg)','url(img/4.jpg)'];
+		window.onload=function(){
+			var divImgs = document.getElementById('d1').getElementsByTagName('img');
+			for (var i =0;i<divImgs.length;i++) {
+				divImgs[i].index = i;
+				divImgs[i].onclick = function(){
+					var d1 = document.getElementById('d1');
+					/*alert(this.index);*/
+					d1.style.background=imgS[this.index];
+				}
+			}
+		}
+	</script>
+		
+	</head>
+	<body>
+		<div id="d0">
+				<a href="index.html">官网首页</a>
+				<a href="#d3"  >星球资料</a>
+				<a href="#d2">故事传说</a>
+				<a href="#d5">地貌环境</a>
+				<a href="#d4">星体运动</a>
+				<a href="#d7">星体卫星</a>
+				<a href="#d6">观测历史</a>				
+		</div><br />	
+		<div id="d1">
+				<img src="img/1.jpg"/>
+				<img src="img/2.jpg"/>
+				<img src="img/3.jpg"/>
+				<img src="img/4.jpg"/>
+		</div>
+		<br /><br />
+		<div id="div1">	
+			<div id="d2">
+				<h1><font color="#7B68EE">故事传说</font></h1>
+				<div id="divm">
+					
+				
+				&nbsp;&nbsp;在我国古代，土星被称为填星，古人观察到它约二十八年运行一个周天（实际周期为29.5年），
+				相当于其坐镇天上的二十八宿，故曰“岁填一宿”。<br/>&nbsp;&nbsp;同时Saturn是罗马神话中的农神，也
+				是时间之神，他对应希腊神话中的时间之神Cronos。Cronos是第二代神系中提坦神Titans的领袖，他带领提坦
+				神族打败了以其父Uranus领导的第一代神系，后来又被其子Zeus领导的第三代神系所打倒，并被关押在地狱深渊
+				Tartarus之中。土星是太阳系第二大行星，仅次于木星Jupiter，而Saturn则是神话中仅次于Jupiter的大神。
+        		<br/>&nbsp;&nbsp;目前已经发现的土星卫星有60颗，其中正式命名的有53颗。这些名字大多源自希腊神话中巨
+        		神族的各种神灵，比如土卫三 Tethys、土卫五 Rhea 、土卫七 Hyperion、土卫八 Iapetus、土卫九 Phoebe 、
+        		土卫十一 Epimetheus、土卫十五 Atlas、土卫十六 Prometheus、土卫十七 Pandora等。还有一些用北欧神话
+        		及其他神话中的巨神或巨人，比如土卫十九 Ymir、土卫四十一 Fenrir、土卫四十二 Fornjot。
+        		</div>
+			</div>
+			
+			<div id="d3">
+				<h1><font color="#7B68EE">星球资料</font></h1>
+				<div id="divs">
+					
+				
+				&nbsp;&nbsp;土星（英文Saturn，拉丁文Saturnus）,为太阳系八大行星之一，至太阳距离（由近到远）位于第六，体积则仅次于木星。并与木星、天王星及海王星同属类木行星。
+				欧洲古代和古希腊称土星为克洛诺斯星，古代中国亦称之镇星或填星。<br/>&nbsp;&nbsp;土星主要由氢组成，还有少量的氦与微量元素，内部的核心包括岩石和冰，外围由数层金属氢和气体包裹着。最外层的
+				大气层在外观上通常情况下都是平淡的，虽然有时会有长时间存在的特征出现。土星的风速高达1800公里/时，明显的比木星上的风速快。土星的行星磁场强度介于地球和更强的木星之间。
+				<br/>&nbsp;&nbsp;土星有一个显著的行星环（可以通过望远镜直接观测），主要的成分是冰的微粒和较少数的岩石残骸以及尘土。已经确认的土星的卫星总共有62颗。其中，土卫六是土星系统中最大和太阳系中第二大的卫星（半径2575km）（太阳系最大的卫星是木星的木卫三，半径2632km）。
+			
+				</div>
+			</div>
+		</div>
+		<br /><br />
+		<div id="div2">							
+			<div id="d4">
+				<h1><font color="#7B68EE">星体运动</font></h1>
+				<div id="divm">
+				&nbsp;&nbsp;土星和其他行星一样，也围绕太阳在椭圆轨道上运动。土星绕太阳公转的轨道半径约为9.54天文
+				距离单位（约14亿公里）轨道的偏心率为0.056，轨道面与黄道面交角为2°5′，绕太阳公转一周约29.5年，公转
+				平均速度约为9.6公里/秒。<br/>&nbsp;&nbsp;土星同太阳的距离在近日点时和在远日点时相差约1 .5亿公里。
+				<br/>&nbsp;&nbsp;土星也有四季，只是每一季的时间要长达7年多，因为离太阳遥远，夏季也是极其寒冷的。
+				<br/>&nbsp;&nbsp;土星的自转很快，仅次于木星，其自转角速度随纬度而不同，在赤道上自转周期为10小时14
+				分，在纬度60°处为10小时40分。由于快速自转，使得它的形状变扁，是太阳系行星中形状最扁的一个。
+				</div>
+			</div>
+			
+			<div id="d5">
+				<h1> <font color="#7B68EE">地貌环境</font></h1>
+				<div id="divs">
+				&nbsp;&nbsp;土星表面也有沿赤道伸展的条纹带，表面被云层覆盖。通过天文望远镜，我们可以看到土星表面也
+				有一些明暗交替的带纹平行于它的赤道面，带纹有时也会出现亮斑、暗斑或白斑。白斑的出现不很稳定，最著名的白
+				斑于1933年8月被英国天文爱好者W·T·海用小型天文望远镜发现此白斑位于土星赤道区，蛋形，长度达土星直径的
+				1/5。以后这块白斑逐渐扩大，几乎蔓延到土星的整个赤道带。<br/>&nbsp;&nbsp;土星极地附近呈绿色，是整
+				个表面最暗的区域。根据红外观测得知云顶温度为-170℃，比木星低50℃。土星表面的温度约为-140℃。由于这颗
+				行星表面温度较低而逃逸速度又大（35.6公里/秒），使土星保留着几十亿年前它形成时所拥有的全部氢和氦。因此，
+				科学家认为，研究土星的成分就等于研究太阳系形成初期的原始成分，这对于了解太阳内部活动及其演化有很大帮助。
+				一般认为土星的化学组成像木星，不过氢的含量较少。土星上甲烷含量比木星多，氨的含量则比木星少。<br/>&nbsp;&nbsp;
+				虽然没有土星内部结构直接的信息，但人们认为它的内部结构类似木星，有一个小岩石的核心主要由氢和氦包围着该岩
+				石的核心成分类似地球，但密度稍微大一点。在它的外面有一个较厚的液态金属层其次是一层液体氢和氦，而在最外层
+				是1000公里的大气。<br/>&nbsp;&nbsp;现代认为，土星形成时，起先是土物质和冰物质吸积，继之是气体积聚
+				因此土星有一个直径2万公里的岩石核心。这个核占土星质量的10%到20%，核外包围着5,000公里厚的冰壳，再外面
+				是8,000公里厚的金属氢层金属氢之外是一个广延的分子氢层。
+				</div>
+			</div>			
+		</div>
+		<br /><br />
+		<div id="div3">							
+			<div id="d6">
+				<h1><font color="#7B68EE">观测历史</font></h1>
+				<div id="divm">
+				&nbsp;&nbsp;土星是外行星，在合日（视觉上接近太阳）前后两个月以外，其他时间也适合观测。而跟外行星的性质
+				一样当冲日时是观测土星最好时候，因为土星冲日时，土星最亮（约0等）之余视直径（角直径）也最大而且冲日前后整
+				夜可见。<br/>&nbsp;&nbsp;通过三吋口径（物镜直径）或以上的望远镜，以目镜放大80倍以上便能透过它清楚看
+				见土星及土星环，在大气稳定时（放大100倍以上）还能看到卡西尼环缝。2007年2月11日，土星冲日，亮度-0.2等，
+				那时土星在狮子座视直径20.27"<br/>&nbsp;&nbsp;说到太阳系里的八大行星，大多数人的脑海里，第一个浮现的
+				行星或许就是土星了。无可否认，土星是八大行星里唯一有明显光环的行星，使用一般的天文望远镜就能轻易看见了，其
+				他行星的光环，犹如小巫见大巫，相比土星光环那样不起眼。
+				</div>
+			</div>
+			
+			<div id="d7">
+				<h1><font color="#7B68EE">星体卫星</font></h1>
+				<div id="divs">
+				&nbsp;&nbsp;1655年3月25日，荷兰天文学家惠更斯在用自制的3.7米长折射望远镜观测土星时，无意中发现了一
+				颗土星的卫星这颗卫星被命名为泰坦(或译：提坦)。它就是最受天文学家瞩目的土卫六，是被人类发现的第一颗土星卫星。
+				<br />&nbsp;&nbsp;土星的卫星中，土卫六是天文学家关注的天体之一。长期以来，土卫六一直被认为是卫星中体积
+				最大的，也是太阳系中唯一拥有大气的卫星，其大气成分主要是甲烷；过去认为它的表面温度也不很低，因而人们推测在它
+				上面可能存在生命。“旅行者1号”发回的数据却令人失望它发现土卫六的直径只有5150公里，并不是太阳系中最大的卫星
+				（木卫三的直径最大，为5262公里），它有一层稠密的大气层和一个液态的表面，其大气层至少有400公里厚，甲烷成分
+				不到1%，大气的主要成份是氮，占98%，还有少量的乙烷、乙烯及乙炔等气体。土卫六的表面温度在-181℃到-208℃之
+				间，液态表面下有一个冰幔和一个岩石核心。飞船未发现存在任何生命的痕迹。土卫六能向外发射电波，使人感到迷惑。此
+				外，土卫六轨道附近有一个氢云。<br />&nbsp;&nbsp;现已确认的土星卫星共23颗。距土星最近的是土卫十五，它与
+				土星的距离为13.7万公里，仅为卫星到土星中心的2.29个土星半径，公转周期为0.601天，其半径只有15公里；最远的是
+				土星九，平均距离约1293万公里，它距土星中心为216个土星半径。土卫八的轨道面与土星赤道面的交角为7°52′，属于不
+				规则卫星。有趣的是，土卫四和土卫十二、土卫十和土卫十一都是两两同一条轨道上；而土卫三、土卫十六和土卫十七则是三
+				星同居一轨道。从飞船发回的资料看，没有发现这些卫星上有火山活动的痕迹。
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

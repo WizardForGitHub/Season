@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pluto</title>
+		<link rel="shortcut  icon" type="image/x-icon" href="../img/logo.ico" />
+		<style type="text/css">
+			body{
+			background-color: black;
+			}
+			#divHeader{
+				color: white;
+				width: 100%;
+				height: 150px;
+				background: black;
+			}
+			#divBody{
+			height: 512px;
+			background-size: 100%;
+			background-image: url(img/pluto.jpg);
+			}
+			#divLeft{
+				height: 512px;
+				width: 20%;
+				float: left;
+				background: black;
+			}
+			#divCenter{
+				float: left;
+				height: 512px;
+				width: 60%;
+				background: rgba(0,0,0,0.5);
+			}
+			 #ho{
+				color: white;
+				opacity: 1;
+			}
+			#divRight{
+			/*	overflow-x: scroll;
+				overflow-y: scroll;*/
+				height: 512px;
+				width: 20%;
+				float: right;
+				background: black;
+			}
+			#divFoor{
+				height: 100px;
+				width: 100%;
+				background: yellowgreen;
+			}
+			#divPic{
+				/*overflow: hidden;*/
+				position: relative;
+				left: 0;
+				width: 3300px;
+				height: 619px;
+				
+				
+			}
+			#divPicBack{
+				width: 100%
+				height: 619px;
+				overflow: hidden;
+				background-image:url(img/pluto.jpg) ;
+			}
+			#divPicover{
+				float: left;
+				width: 1100px;
+				height: 619px;
+				background: url(img/pluto.jpg);
+			}
+			#divPicOver{
+				float: left;
+				width: 1100px;
+				height: 619px;
+				background: url(img/pluto1.jpg);
+			}
+			#divPicOVer{
+				float: left;
+				width: 1100px;
+				height: 619px;
+				background: url(img/pluto2.jpg);
+			}
+
+			#divText{
+				margin-top: 50px;
+				width: 100%;
+				height: 0px;
+				/*background: blue;*/
+				/*display: none;*/
+				overflow: hidden;
+				position: relative;
+			}
+			#divText div{
+				position: relative;
+				padding: 10px;
+				margin: 20px;
+				width: 250px;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+				background: gray;
+			}
+			#divButton{
+				width: 100%;
+				height: 10px;
+				text-align: center;
+			}
+			#divButtonImg{
+				margin: 0 auto;
+				width: 50px;
+				height: 50px;
+			}
+			#divText div img{
+				width: 250px;
+				height: 200px;
+			}
+			#divText div p{
+				width: 248px;
+				height: 98px;
+				color: blue;
+			}
+			#divText div div{
+				position: absolute;
+				top: 300px;
+				left: -20px;
+				width: 250px;
+				height: 300px;
+				background: white;
+				opacity: 0.5;
+				color: black;
+			}
+			#title{
+				width: 1333px;
+				height: 150px;
+				border-radius: 2em;
+				background: rgb(79,10,90);
+			}
+			#title img{
+				float: left;
+			}
+			#title ul{
+				float: left;
+				margin-top: 100px;
+			}
+			#title ul li {
+				float: left;
+				font-size: 20px;
+				margin-left: 20px;
+				list-style: none;
+			}
+		</style>
+		<script src="myLibrary.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		var imgS=['url(img/pluto.jpg)','url(img/pluto1.jpg)','url(img/pluto2.jpg)','url(img/pluto3.jpg)','url(img/pluto4.jpg)','url(img/pluto7.jpg)'];
+		var Strings=['第一段文字','第二段文字','第三段文字','第四段文字','第五段文字','第六段文字'];
+		var now = 0;
+		var oldwdith=0;
+		var oldwdith2=0;
+			window.onload=function(){		
+			 var vDivPicOver = document.getElementById('divPicOver');
+			 var vDivButtonimg = document.getElementById('divButtonImg');
+			 	vDivPicOver.onmouseover= function(){
+			 	var vImg = document.getElementById('divPic');
+				mfMove(vImg,'left',-1100,function(){mfChangImg();});
+			 	}
+			 	vDivButtonimg.onmouseover=function(){
+			 		mfRotate(vDivButtonimg,90,10);
+			 	}
+			 	vDivButtonimg.onclick = function(ev){
+			 		var eve = ev||event;
+			 		var vDivText = document.getElementById('divText');
+			 		mfMove(vDivText,'height',900);
+			 		eve.cancelBubble=true;
+			 	}
+			 	document.onclick=function(){
+			 		var vDivText = document.getElementById('divText');
+			 		mfMove(vDivText,'height',0);
+			 	}
+			 	var divTexttext = document.getElementById('divText').getElementsByTagName('div');
+			 		for (var i =0;i<divTexttext.length;i++) {
+			 			divTexttext[i].index = i;
+			 			divTexttext[i].onclick=function(ev){
+			 				var eve = ev||event;
+			 				eve.cancelBubble=true;
+			 				alert(this.index);
+			 			}
+			 			divTexttext[i].onmouseover=function(){
+			 			var x =	divTexttext[this.index].getElementsByTagName('div')[0];
+			 			mfMove(x,'top',-20);
+			 			}
+			 			divTexttext[i].onmouseout=function(){
+			 			var x =	divTexttext[this.index].getElementsByTagName('div')[0];
+			 			mfMove(x,'top',300);
+			 			}
+			 		}
+			}
+			function mfChangImg(){
+				var vImg = document.getElementById('divPic');
+				var vDivPicover = document.getElementById('divPicover');
+				var vDivPicOver = document.getElementById('divPicOver');
+				var vDivPicOVer = document.getElementById('divPicOVer');
+				var vDivCenter = document.getElementById('divBody');
+				var vDivText= document.getElementById('ho');
+				now++;
+				vDivPicover.style.background=imgS[now%6];
+				vDivPicOver.style.background=imgS[(now+1)%6];
+				vDivPicOVer.style.background=imgS[(now+2)%6];
+				mfMove(vDivCenter,'opacity',0.1,function(){
+					vDivCenter.style.background=imgS[now%6];
+					vDivCenter.style.opacity=1;
+					vDivText.innerHTML=Strings[now%6];
+					/*mfMove(vDivCenter,'opacity',0.9);*/
+				});
+				vImg.style.left=0+'px';
+			}
+			function mfRotate(iDom,iTagate,speed){
+					var m = 0;
+					clearInterval(iDom.timer);
+						iDom.timer = setInterval(function(){
+						if(m==iTagate){
+							iTagate=0-iTagate+speed;
+							speed=0-speed;
+						}else if(iTagate==0){
+							clearInterval(iDom.timer);
+						}else{
+							iDom.style.transform = 'rotate('+m+'deg)';
+							m=m+speed;
+						}
+					},20);
+				}
+			
+		</script>
+	</head>
+	<body id="body">
+		<div id="divHeader"><div id="title"><img src="img/arrow2.png"/>
+			<ul>
+				<li>按钮1</li>
+				<li>按钮2</li>
+				<li>按钮3</li>
+			</ul>
+		</div>
+	</div>
+		<div id="divPicBack">
+			<div id="divPic">
+			<div id="divPicover" ></div>
+			<div id="divPicOver"></div>
+			<div id="divPicOVer"></div>
+		</div>
+		</div>
+		<div id="divBody">
+			<div id="divLeft"></div>
+			<div id="divCenter"><h1 id="ho">这里是一些文字</h1></div>
+			<div id="divRight"></div>
+		</div>
+		
+		<div id="divText">
+			<div id="div1"><img src="img/plutoCB6.jpg"/><p>xxxxxxxxxxxxxxxxxxxxxxxxx</p><div>123123</div></div>
+			<div id="div2"><img src="img/plutoCB6.jpg"/><p>xxxxxxxxxxxxxxxxxxxxxxxx</p><div>13313</div></div>
+			<div id="div3"><img src="img/plutoCB6.jpg"/><p>xxxxxxxxxxxxxxxxxxxxxx</p><div>132123</div></div>
+			<div id="div4"><img src="img/plutoCB6.jpg"/><p>xxxxxxxxxxxxxxxxxxxxxxx</p><div>qw</div></div>
+			<div id="div5"><img src="img/plutoCB6.jpg"/><p>xxxxxxxxxxxxxxxxxxxxxxxx</p><div>asd</div></div>
+			<div id="div6"><img src="img/plutoCB6.jpg"/><p>xxxxxxxxxxxxxxxxxxxxxxx</p><div>awq2e</div></div>
+			<div id="div7"><img src="img/plutoCB6.jpg"/><p>xxxxxxxxxxxxxxxxxxxxxxx</p><div>123qew</div></div>
+			<div id="div8"><img src="img/plutoCB6.jpg"/><p>xxxxxxxxxxxxxxxxxxxxxxx</p><div>asccz</div></div>
+			<div id="div9"><img src="img/plutoCB6.jpg"/><p>xxxxxxxxxxxxxxxxxxxxxx</p><div>fggadq</div></div>
+		</div>
+		<div id="divButton"><img src="img/arrow2.png" id="divButtonImg"/></div>
+		<div id="divFoor"></div>
+	</body>
+</html>

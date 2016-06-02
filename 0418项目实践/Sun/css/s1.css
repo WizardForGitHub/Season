@@ -1,0 +1,38 @@
+
+
+#main{
+	height: 960px;
+	width: 700px;
+	border: 1px solid aquamarine;
+	/*background-image: url(../img/4.jpg) ;*/
+}
+
+#head{
+	height: 100px;
+	width: 700px;
+	border: 1px solid aquamarine;
+	background: dodgerblue;
+	
+}
+#center{
+	height: 600px;
+	width: 700px;
+	border: 1px solid aquamarine;
+}
+#left{
+	height: 600px;
+	width: 500px;
+	border: 1px solid aquamarine;
+}
+/*#right{
+	height: 600px;
+	width: 200px;
+	border: 1px solid aquamarine;
+    float: left;
+}*/
+#bottom{
+	height: 260px;
+	width: 700px;
+	border: 1px solid aquamarine;
+	
+}

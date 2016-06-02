@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Neptune</title>
+		<link rel="shortcut  icon" type="image/x-icon" href="../img/logo.ico" />
+		<style>
+		
+		body{
+			background-image:url(img/back.jpg);
+			background-repeat: no-repeat;
+			
+	        background-size: 100%;
+			/*overflow: scroll;*/
+			overflow-y: hidden;
+		  }
+		  #title{
+		  	width:300px;
+		  	top:0px;
+		  	height:80px;
+		  	font-family: "blackadder itc";
+		  	
+		  	
+		  	margin-left: auto;
+		  	margin-right: auto;
+		  	
+		  	
+		  }
+		   #div1 .active{
+				
+				background:greenyellow;
+			}
+			 input{
+        	border-radius: 20px;
+        	width:90px;
+        	height:40px;
+        }
+			#div1 div2{
+				/*width:380px;
+				height:180px;
+				background-color: #228DFF;
+				/*border:3px solid cadetblue;*/
+				/*background-image:url(img/sd.jpg);
+				background-repeat:no-repeat;*/
+				/*border-radius: 50px;
+			    float:left ;
+			    display: none;*/
+			     width: 400px;
+				height: 200px;
+				background-image:url(img/left1.jpg);
+				border: 0px solid ;
+				display: none;
+				border-radius: 30px;
+			}
+		
+
+        
+          #first{
+          	position: absolute;
+          	top: 28px;
+          	left:520px ;
+        	width:180px;
+        	height:300px;
+        	display: none;
+        	border:3px solid lightseagreen;
+        	border-radius: 50px;
+        }
+         #second{
+         	position: absolute;
+         	top:10px;
+         	left:700px;
+        	width:180px;
+        	height:350px;
+        	display: none;
+        	
+        	border:3px solid lightseagreen;
+        	border-radius: 50px;
+        
+        }
+        #third{
+        	position: absolute;
+        	top:10px;
+         	left:880px;
+        	width:180px;
+        	height:260px;
+        	display: none;
+        	border-radius: 50px;
+        	font-size: 15px;
+        
+        	
+			
+        	
+        }
+        #pic{
+        	 
+        	width:570px;
+        	height:600px;
+        	
+        	top:0px;
+        	float:right;
+        	
+        }
+        #pic img:hover{
+        	transform: rotate(0deg) scale(1.2);/*类似于放大*
+	        animation: img 2s linear 2s 4;/*旋转动画*/
+        }
+       
+        
+	  img{
+	  	    
+	  	    width:180px;
+        	height:180px;
+        	transition: all 0.2s ease-in;
+        	border-radius:50em;
+        	border:0px;
+        	
+	     }
+     
+      #turn-left{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			}
+		</style>
+		<script>
+			window.onload=function(){
+				var oDiv=document.getElementById('div1');
+				var aBtn=oDiv.getElementsByTagName('input');
+				var aDiv=oDiv.getElementsByTagName('div2');
+				for(var i=0;i<aBtn.length;i++){
+					
+					aBtn[i].index=i;
+					aBtn[i].onclick=function(){
+						for(var i=0;i<aBtn.length;i++){
+							aBtn[i].className='';
+							//都变成没有class的
+							aDiv[i].style.display='none';
+							
+						}
+						this.className='active';
+						aDiv[this.index].style.display='block';
+						
+						
+					};
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<div id="title">
+			
+			<h1><font color="greenyellow">City of Neptuneone</font></h1>
+			
+			
+		</div>
+		<div id="div1">
+			<input class="active" type="button" value="星球的介绍"/>
+			<input type="button" value="星球的发现"/>
+			<input type="button" value="星球的组成"/>
+			<input type="button" value="星球的磁层"/>
+			<div2  style="display: block;"><p><b><font color="white" >&nbsp&nbsp海王星是太阳系八大行星中距离太阳最远的，
+				体积是太阳系第四大，但质量排名是第三。海王星的质量大约是地球的17倍，而类似双胞胎的天王星因密度较低，质量大约是地球的14倍。
+				海王星大气层85%是氢气，13%是氦气，2%是甲烷，除此之外还有少量氨气。
+				在大气层中的甲烷，只是使行星呈现蓝色的一部分原因。
+				因为海王星的蓝色比有同样份量的天王星更为鲜艳，因此应该还有其他的成分对海王星明显的颜色有所贡献。</b></p></div2>
+			<div2><p><b><font color="white" >&nbsp&nbsp1612年12月28日首度观测并描绘出海王星。1613年1月27日又再次观测，但因为观测的位置在夜
+					空中都靠近木星（在合的位置），这两次机会伽利略都误认海王星是一颗恒星。相信是恒星，而不相信自己的发现，是因为1612年12月第一次观测的，
+					海王星在留转向退行的位置，因为刚开始退行时的运动还十分微小，以至于伽利略的小望远镜察觉不出位置的改变。</b></p></div2>
+			<div2><p><b><font color="white" >&nbsp&nbsp以其1.0247e+26 千克的质量，海王星是介于地球和巨行星（指木星和土星）之间的的中等大小行星：
+				它的质量既是地球质量的17倍，也是木星质量的1/18。因为它们质量较典型类木行星小海王星内部结构，而且密度、组成成份、内部结构也与类木行星有显著差别，海王星和天王星一起常常被归为类木行星的一个子类：冰巨星。在寻找太阳系外行星领域，海王星被用作一个通用代号，
+					指所发现的有着类似海王星质量的系外行星，就如同天文学家们常常说的那些系外“木星”。</b></p></div2>
+			<div2><p><b><font color="white" >&nbsp&nbsp海王星有着与天王星类似的磁层，它的磁场相对自转轴有着高达47°的倾斜[5]  ，并且偏离核心至少0.55 半径，或是偏离物理上的中心13,500公里。
+				在航海家2号抵达海王星之前，天王星的磁层倾斜假设是因为它躺着自转的海王星结果，但是，比较这两星的磁场，科学家认为这种极端的指向是行星内部流体的特征。
+					这个区域也许是一层导电体液体（可能是氨、甲烷和水的混合体）形成的对流层流体运动，造成发电机的活动。</b></p></div2>
+		</div>
+		<div id="pic">
+			<a href="#"><img src="img/1.jpg" onmouseover="document.getElementById('first').style.display='block'"
+			onmouseout="document.getElementById('first').style.display='none'"/></a>
+			<a href="#"><img src="img/2.jpg" onmouseover="document.getElementById('second').style.display='block'"
+			onmouseout="document.getElementById('second').style.display='none'"/></a> 
+			<a href="#"><img src="img/3.jpg" onmouseover="document.getElementById('third').style.display='block'"
+			onmouseout="document.getElementById('third').style.display='none'"/></a>  
+		</pic>
+		   	<div id="first">
+		   		<h3 align="center"><b><font color="greenyellow">轨道运转</font></b></h3>
+		   		<p><font color="white" size="2">海王星的轨道周期（年）大约相当于164.79地球年。
+		   		海王星于2011年7月12日回到绕日公转轨道上它被发现时的那个点。
+		   		由于地球处于其365.25天周期轨道的不同地点，
+		   		届时从地球看到的海王星并不会处在它被发现时在天空中的那个位置。
+		   		从地球上观察，海王星冲日周期为367天，
+		   		这些周期使它在2010年4月和7月以及2011年10月和11月接近1846年它被发现时的坐标。</font></p>
+		   	</div>
+			<div id="second">
+				<h3 align="center"><b><font color="greenyellow">外观形体</font></b></h3>
+		   		<p><font color="white"size="2">其亮度介乎视星等+7.7和+8.0，比木星的伽利略卫星，
+		   		矮行星、谷神星和小行星、灶神星、智神星、虹神星、婚神星和韶神星都暗。
+		   		在天文望远镜或优质的双筒望远镜中，海王星显现为一个小小的蓝色圆盘，看上去与天王星很相似。蓝色来自在于它大气中的甲烷。
+		   		它在视觉上的细小给研究造成了困难；多数从望远镜中获得的数据是相当有限的，
+		   		直到出现哈勃太空望远镜和大型地基望远镜与自适应光学技术才获得改观</font></p>
+		   	</div>
+		   	<div id="third">
+		   		
+		   		<table border="1 px solid " bordercolor="lightseagreen" onscroll="none" >
+		   			<tr><th colspan="2"><font color="greenyellow" >天文指数</font></th></tr>
+		   			<tr>
+		   				<td>质量</td>
+		   				<td>1.0247e+26 千克</td>
+		   		    </tr>
+		   		        <td>质量比（地球 = 1）</td>
+		   		    	<td>1.7135e+01</td>
+		   		    </tr>
+		   		    	<tr>
+		   		    		<td>赤道半径（km)</td><td>24,746</td>
+		   		    	</tr>
+		   		    <tr><td>赤道半径 （地球= 1）</td>
+		   		    	<td>3.8799e+00</td>
+		   		    </tr>
+		   		    <tr><td>平均密度（gm/cm³）</td>
+		   		    	<td>1.64 </td></tr><tr><td>平均日距 (km)
+						</td><td>4,504,300,000
+						</td></tr>
+						<tr><td>视觉几何
+						</td><td>0.41
+						</td></tr><tr><td>星等（Vo)
+						</td><td>7.84
+						</td></tr>
+						<tr><td>赤道逃逸速度 (km/秒）
+						</td><td>23.50
+						</td></tr>
+						
+		   		</table>
+		   	</div>
+		
+
+	
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			  #tupian{
+			  	position:absolute;
+			    overflow:hidden;
+			    width:650px;height:210px;
+			  }
+			    li{float:left;list-style-type:none;padding:5px;}
+		</style>
+		 <script>
+  window.onload=function()
+  {
+   var odiv2=document.getElementById('tupian');
+   var ali=odiv2.getElementsByTagName('li');
+   var aspeed=5;
+   var timer=null;
+   odiv2.innerHTML+=odiv2.innerHTML;
+   odiv2.style.width=ali[0].offsetWidth*ali.length+'px';
+odiv2.onmouseover=function(){clearInterval(timer);};
+function a()
+{
+   timer=setInterval(function()    
+     {
+      odiv2.style.left=odiv2.offsetLeft+aspeed+'px';
+      if (odiv2.offsetLeft<-odiv2.offsetWidth/2)
+      {
+       odiv2.style.left='0px';
+       }
+       },30);};
+   odiv2.onmouseout=a;
+   a();
+   }
+ </script>
+	</head>
+	<body>
+		<div id='tupian'>
+		   <li><a href=""><img src="img/tupian1.jpg" /></a></li>
+		   <li><a href=""><img src="img/tupian2.jpg" /></a></li>
+		   <li><a href=""><img src="img/tupian3.jpg" /></a></li>
+		   <li><a href=""><img src="img/tupian4.jpg" /></a></li>   
+  		</div>
+	</body>
+</html>

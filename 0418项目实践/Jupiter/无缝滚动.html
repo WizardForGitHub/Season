@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#tupian{
+				width:1000px;
+				height:235px;
+				border: 2px solid black;
+				overflow: hidden;
+				position: absolute;
+			}
+			#tupian ul{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#tupian ul li{
+				height: 402px;
+				width: 310px;
+				float: left;
+				list-style: none;
+			}
+		
+		</style>
+		
+		<script type="text/javascript">
+			window.onload=function(){
+				var speed = 2;
+				var oDiv = document.getElementById('tupian');
+				var oUl = document.getElementsByTagName('tu')[0];
+				var oLi = document.getElementsByTagName('li2');
+				oUl.innerHTML = oUl.innerHTML+oUl.innerHTML;
+				oUl.style.width = oLi[0].offsetWidth*oLi.length+'px';
+				setInterval(function(){
+					
+					if(oUl.offsetLeft<-oUl.offsetWidth/2){
+						oUl.style.left=0;
+					}
+					if(oUl.offsetLeft>0){
+						oUl.style.left=-oUl.offsetWidth/2+'px';
+					}
+					oUl.style.left = oUl.offsetLeft+speed+'px';
+				},30);
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div id='tupian'>
+			<ul id="ul1" >
+				<li id="li2"> <img src="img/tupian1.jpg" /> </li>
+				<li id="li2"> <img src="img/tupian2.jpg" /> </li>
+				<li id="li2"> <img src="img/tupian3.jpg" /> </li>				
+				<li id="li2"> <img src="img/tupian4.jpg" /> </li>				
+				<li id="li2"> <img src="img/tupian5.jpg" /> </li>				
+			</ul>
+		</div>
+	</body>
+</html>

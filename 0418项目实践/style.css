@@ -1,0 +1,249 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+	background-image: url(img/背景.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow-x: hidden;
+}
+#all img{
+	transition: all 0.7s ease-in;
+}
+#all img:hover{
+	transform: scale(1.2);
+	z-index: 1;
+}
+
+#sun img{
+	position: absolute;
+	left: -250px;
+	top: -100px;
+	height: 400px;
+	width: 400px;
+	border-radius: 50em;
+	box-shadow: 10px 10px 10px 5px black;
+	
+}
+#mercury img{
+	position: absolute;
+	left: 160px;
+	top: 200px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px 3px black;
+}/*水星*/
+
+#venus img{
+	position: absolute;
+	left: 180px;
+	top: 350px;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px 3px black;
+}/*金星*/
+#earth img{
+	position: absolute;
+	left: 290px;
+	top: 275px;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px 3px black;
+}/*地球*/
+#mars img{
+	position: absolute;
+	left: 430px;
+	top: 100px;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px 3px black;
+}/*火星*/
+#jupiter img{
+	position: absolute;
+	left: 480px;
+	top: 280px;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px 3px rgba(17,40,72,0.7);
+}/*木星*/
+#saturn img{
+	position: absolute;
+	left: 610px;
+	top: 450px;
+	height: 130px;
+	width: 130px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px 3px black;
+}/*土星*/
+#uranus img{
+	position: absolute;
+	left: 710px;
+	top: 140px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px 3px black;
+}/*天王星*/
+#neptune img{
+	position: absolute;
+	left: 840px;
+	top: 320px;
+	height: 95px;
+	width: 95px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px 3px rgba(26,23,68,0.7);
+}/*海王星*/
+#pluto img{
+	position: absolute;
+	left: 1000px;
+	top: 50px;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px 3px black;
+}/*冥王星*/
+
+
+#sun1{
+	width: 150px; 
+	height: 180px;
+	top: 350px;
+	left: 10px;
+	position: absolute;
+	background: rgba(40,40,40,0.3);
+	color: white;
+	display: none;
+}
+#mercury1{
+	width: 150px; 
+	height: 170px;
+	background: red;
+	top: 70px;
+	left: 235px;
+	position: 
+	absolute;background: rgba(40,40,40,0.3);
+	color: white;
+	display: none;
+}
+#venus1{
+	width: 150px; 
+	height: 150px;
+	background: red;
+	top: 370px;
+	left: 270px;
+	position: absolute;
+	background: rgba(40,40,40,0.3);
+	color: white;
+	display: none;
+}
+#earth1{
+	width: 150px; 
+	height: 185px;
+	background: red;
+	top: 250px;
+	left: 390px;
+	position: absolute;
+	background: rgba(40,40,40,0.3);
+	color: white;
+	display:none;
+	z-index: 1;
+}
+#mars1{
+	width: 150px; 
+	height: 150px;
+	background: red;
+	top: 100px;
+	left: 510px;
+	position: absolute;
+	background: rgba(40,40,40,0.3);
+	color: white;
+	display: none;
+}
+#jupiter1{
+	width: 150px; 
+	height: 150px;
+	background: red;
+	top: 280px;
+	left: 665px;
+	position: absolute;
+	background: rgba(40,40,40,0.3);
+	color: white;
+	display: none;
+}
+#saturn1{
+	width: 150px; 
+	height: 115px;
+	background: red;
+	top: 350px;
+	left:750px;
+	position: absolute;
+	background: rgba(40,40,40,0.3);
+	color: white;
+	display: none;
+	z-index: 1;
+}
+#uranus1{
+	width: 150px; 
+	height: 100px;
+	background: red;
+	top: 150px;
+	left: 840px;
+	position: absolute;
+	background: rgba(40,40,40,0.3);
+	color: white;
+	display: none;
+}
+#neptune1{
+	width: 150px; 
+	height: 170px;
+	background: red;
+	top: 300px;
+	left: 965px;
+	position: absolute;
+	background: rgba(40,40,40,0.3);
+	color: white;
+	display: none;
+}
+#pluto1{
+	width: 150px; 
+	height: 100px;
+	background: red;
+	top: 150px;
+	left:960px;
+	position: absolute;
+	background: rgba(40,40,40,0.3);
+	color: white;
+	display: none;
+}
+#team{
+	position: absolute;
+	bottom: 10px;
+	left: -16px;
+	width: 15px;
+	font-size: 14px;
+	color: #929292;
+}
+#team1{
+	position: absolute;
+	bottom: 10px;
+	right: -130px;
+	width: 125px;
+	ont-size: 14px;
+	color: #929292;
+	
+}
+#teama{
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+	height: 150px;
+	width: 140px;
+	overflow: hidden;
+}

@@ -1,0 +1,188 @@
+#dh input{
+	width: 150px;
+	height: 50px;
+	margin-left: -8px;
+	border: 0px;
+	color: wheat;
+	background: darkslategrey;
+	transform: skewY(0deg);
+	font-size: 15px;
+	font-style: oblique;
+	transition: all 1s;
+}
+#dh input:hover{
+	transform: skewY(-360deg);
+	font-size: 18px;
+}
+#dh11 input{
+	width: 150px;
+	height: 40px;
+	margin-left: 30px;
+	font-size: 20px;
+	font-style: oblique;
+	border: 0px;
+	color: wheat;
+	background: darkslategray;
+	font-family: "agency fb";
+}
+#dh21 input{
+	width: 150px;
+	height: 40px;
+	margin-left: 30px;
+	font-size: 20px;
+	font-style: oblique;
+	border: 0px;
+	color: wheat;
+	background: darkslategray;
+	font-family: "agency fb";
+}
+#dh31 input{
+	width: 150px;
+	height: 40px;
+	margin-left: 30px;
+	font-size: 20px;
+	font-style: oblique;
+	border: 0px;
+	color: wheat;
+	background: darkslategray;
+	font-family: "agency fb";
+}
+#dh41 input{
+	width: 150px;
+	height: 40px;
+	margin-left: 30px;
+	font-size: 20px;
+	font-style: oblique;
+	border: 0px;
+	color: wheat;
+	background: darkslategray;
+	font-family: "agency fb";
+}
+#dh51 input{
+	width: 150px;
+	height: 40px;
+	margin-left: 30px;
+	font-size: 20px;
+	font-style: oblique;
+	border: 0px;
+	color: wheat;
+	background: darkslategray;
+	font-family: "agency fb";
+}
+#dh61 input{
+	width: 150px;
+	height: 40px;
+	margin-left: 30px;
+	font-size: 20px;
+	font-style: oblique;
+	border: 0px;
+	color: wheat;
+	background: darkslategray;
+	font-family: "agency fb";
+}
+#dh12 input{
+	width: 150px;
+	height: 40px;
+	margin-left: -8px;
+	border: 0px;
+	color: gainsboro;
+	background: rosybrown;
+	transform: rotateZ(0deg);
+	font-size: 13px;
+	font-style: oblique;
+	transition: all 1s;
+}
+#dh12 input:hover{
+	transform: rotateZ(360deg);
+}
+#dh22 input{
+	width: 150px;
+	height: 40px;
+	margin-left: -8px;
+	border: 0px;
+	color: gainsboro;
+	background: rosybrown;
+	transform: rotateZ(0deg);
+	font-size: 13px;
+	font-style: oblique;
+	transition: all 1s;
+}
+#dh22 input:hover{
+	transform: rotateZ(-360deg);
+}
+#dh32 input{
+	width: 150px;
+	height: 40px;
+	margin-left: -8px;
+	border: 0px;
+	color: gainsboro;
+	background: rosybrown;
+	transform: rotateZ(0deg);
+	font-size: 13px;
+	font-style: oblique;
+	transition: all 1s;
+}
+#dh32 input:hover{
+	transform: rotateZ(360deg);
+}
+#dh42 input{
+	width: 150px;
+	height: 40px;
+	margin-left: -8px;
+	border: 0px;
+	color: gainsboro;
+	background: rosybrown;
+	transform: rotateZ(0deg);
+	font-size: 13px;
+	font-style: oblique;
+	transition: all 1s;
+}
+#dh42 input:hover{
+	transform: rotateZ(-360deg);
+}
+#dh52 input{
+	width: 150px;
+	height: 40px;
+	margin-left: -8px;
+	border: 0px;
+	color: gainsboro;
+	background: rosybrown;
+	transform: rotateZ(0deg);
+	font-size: 13px;
+	font-style: oblique;
+	transition: all 1s;
+}
+#dh52 input:hover{
+	transform: rotateZ(360deg);
+}
+#dh62 input{
+	width: 150px;
+	height: 40px;
+	margin-left: -8px;
+	border: 0px;
+	color: gainsboro;
+	background: rosybrown;
+	transform: rotateZ(0deg);
+	font-size: 13px;
+	font-style: oblique;
+	transition: all 1s;
+}
+#dh62 input:hover{
+	transform: rotateZ(-360deg);
+}
+#bottom input{
+	width: 150px;
+	height: 50px;
+	margin-left: 500px;
+	border: 0px;
+	color: gainsboro;
+	background: darkslategray;
+	transform: rotateY(0deg);
+	font-size: 20px;
+	font-style: oblique;
+	transition: all 1s;
+}
+#bottom input:hover{
+	transform: rotateY(-360deg);
+	font-size: 25px;
+}
